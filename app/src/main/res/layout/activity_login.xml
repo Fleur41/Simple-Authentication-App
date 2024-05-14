@@ -31,15 +31,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_login_title" />
 
+    <!--    TODO: 3. Update TextInputLayout-->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:id="@+id/till_email"
         android:hint="@string/login_email"
-        app:startIconDrawable="@drawable/ic_circle_account"
         style="@style/TextInputLayout"
-        app:endIconMode="clear_text"
         app:layout_constraintTop_toBottomOf="@+id/tv_login_sub_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -50,24 +49,21 @@
             android:layout_height="wrap_content"
             android:id="@+id/et_email"
             style="@style/TextInputEditText"
-            android:paddingStart="60dp"
-
+            android:drawableStart="@drawable/ic_password"
          />
     </com.google.android.material.textfield.TextInputLayout>
 
+<!--    TODO: 4. Update TextInputLayout-->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:id="@+id/till_password"
         android:hint="@string/login_password"
-        app:startIconDrawable="@drawable/ic_circle_account"
         style="@style/TextInputLayout"
-        app:endIconMode="clear_text"
         app:layout_constraintTop_toBottomOf="@+id/till_email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:paddingTop="4dp"
         app:hintTextAppearance="@style/HintTextAppearance" >
 
 
@@ -76,9 +72,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/et_password"
             style="@style/TextInputEditText"
-            android:paddingStart="60dp"
-            android:gravity="start" />
-<!--            android:paddingStart="60dp"-->
+            android:drawableStart="@drawable/ic_circle_account"
+            />
+
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -90,6 +86,7 @@
         android:textAlignment="textEnd"
         android:textColor="@color/primary_color"
         android:textStyle="bold"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/till_password" />
